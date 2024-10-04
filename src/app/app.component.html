@@ -1,0 +1,40 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-200 p-4">
+  <div class="bg-white rounded-lg shadow-xl py-16 px-8 w-full max-w-sm md:max-w-lg lg:max-w-xl">
+    <div class="flex justify-center mb-4">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp Logo"
+        class="w-12 h-12 md:w-14 md:h-14"
+      />
+    </div>
+    <p class="text-center text-gray-500 mb-2 text-sm md:text-base">
+      Silahkan konsultasi via Whatsapp
+    </p>
+    <div class="flex items-center justify-between bg-gray-100 p-3 rounded-lg mb-4">
+      <span class="text-sm md:text-lg font-medium text-gray-800">0857 2927 2228</span>
+      <button
+        (click)="copyToClipboard()"
+        class="bg-gray-300 hover:bg-green-400 text-gray-800 text-xs md:text-sm font-semibold py-1 px-3 rounded-full"
+      >
+        {{ copied ? 'Copied' : 'Copy' }}
+      </button>
+    </div>
+    <p class="text-center text-gray-500 mb-2 text-sm md:text-base">dengan format pesan:</p>
+    <textarea
+      class="w-full p-3 bg-gray-100 rounded-lg mb-4 text-sm md:text-base"
+      rows="3"
+      readonly
+    >
+Halo, Saya tertarik dengan promo cincinnya, mohon infonya ya kak... 🙏💍
+    </textarea>
+    <a
+  href="https://api.whatsapp.com/send?phone=6285729272228&text=Halo%2C%20Saya%20tertarik%20dengan%20promo%20cincinnya%2C%20mohon%20infonya%20ya%20kak..."
+  target="_blank"
+  class="block bg-green-500 hover:bg-green-600 text-white text-center font-semibold py-2 md:py-3 rounded-full transition text-sm md:text-base flex items-center justify-center"
+>
+  <i class="fab fa-whatsapp mr-2"></i> <!-- Ikon WhatsApp -->
+  Chat Via Whatsapp
+</a>
+
+  </div>
+</div>
