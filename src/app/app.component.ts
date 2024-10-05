@@ -24,7 +24,7 @@ export class AppComponent {
         setTimeout(() => {
           this.copied = false; // Kembalikan ke "Salin No Whatsapp" setelah 2 detik
           this.showPopup = false; // Sembunyikan popup setelah 4 detik
-        }, 5000); // Sembunyikan popup setelah 4 detik
+        }, 10000); // Sembunyikan popup setelah 4 detik
       },
       (err) => {
         console.error('Gagal menyalin teks: ', err);
